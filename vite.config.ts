@@ -5,6 +5,14 @@ import fs from "node:fs";
 import path from "node:path";
 import { defineConfig, type Plugin, type ViteDevServer } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+  server: {
+    allowedHosts: ['bingogen.onrender.com'],
+  },
+})
+
 
 // =============================================================================
 // Manus Debug Collector - Vite Plugin
